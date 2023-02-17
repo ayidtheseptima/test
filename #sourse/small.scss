@@ -1,0 +1,73 @@
+@media (max-width: 840px) {
+    .header{
+        flex-direction: column;
+        &__logo{
+            margin-right: 0;
+            text-align: center;
+        }
+        &__nav{
+            flex-direction: column;
+            & a{
+                text-align: center;
+                margin-right: 0;
+                margin: 10px auto 10px auto;
+            }
+            & a:last-child{
+                margin: 5px auto 0 auto;
+            }
+        }
+    }
+
+    .about-us{
+        &__image{
+            margin: 0 auto 40px auto;
+        }
+        &__info{
+            padding: 0;
+        }
+        &__text{
+            padding: 5px;
+        }
+    }
+
+    .dish-list{
+        flex-direction: column;
+        padding: 0 5px 0 5px;
+    }
+
+    .footer__top>.container{
+        flex-direction: column;
+    }
+    .footer__info{
+        margin: 0 auto 57px auto;
+        text-align: center;
+    }
+    .footer__nav-title{
+        margin: 25px auto 25px auto;
+    }
+    .footer__link{
+        text-align: center;
+        margin: 0 auto 0 auto;
+        padding: 10px;
+    }
+    .footer__contact-title{
+        text-align: center;
+        margin: 50px auto 25px auto;
+    }
+    .footer__contact-us{
+        margin: 10px auto 0 auto;
+    }
+    .footer__copyright{
+        margin: 0 auto 25px auto;
+    }
+    .footer__bot-row{
+        flex-direction: column;
+        padding: 0 10px 0 10px;
+    }
+    .footer__bot-links{
+        margin: 0 auto 25px auto;
+    }
+    .footer__logo-links{
+        margin: 0 auto 0 auto;
+    }
+}

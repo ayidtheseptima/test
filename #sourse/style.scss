@@ -1,0 +1,335 @@
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+
+@import 'fonts';
+
+
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  background-color: #f3f5f7;
+  color: #fff;
+  font-family: "ProximaNova";
+  font-size: 18px;
+}
+.container {
+  max-width: 1100px;
+  margin: 0px auto;
+}
+.title{
+  font-family: "forever_brush_script";
+  font-size: 56px;
+}
+.title:after {
+ content: '';
+ display: block;
+ background: #e91e5f;
+ width: 108px;
+ height: 2px;
+ margin: 13px auto 0 auto; 
+}
+
+/*header*/
+
+.header{
+  padding: 62px 15px 0 15px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1211px;
+  margin: 0 auto;
+  margin-bottom: 327px;
+  &__logo{
+    font-family: "ProximaNovaTh";
+    font-size: 31px;
+    margin-right: auto;
+    & a{
+      color: #fff;
+    }
+  }
+  &__nav{
+    display: flex;
+    & a{
+      display: flex;
+      text-decoration: none;
+      color: #fff;
+      align-items: center;
+      margin-right: 54px;
+    }
+    & a:last-child{
+      margin-right: 0px;
+    }
+  }
+}
+
+
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url("../img/bg-banner.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  &__title{
+    display: flex;
+    text-align: center;
+    font-family: "ProximaNovaTh";
+    font-size: 72px;
+    margin: 0px auto 50px auto;
+  }
+  &__text{
+    text-align: center;
+    line-height: 32px;
+    max-width: 713px;
+    margin: 0 auto 327px auto;
+  }
+}
+
+/*about us*/
+.about-us{
+  background: #af1e1e;
+  &__row{
+    display: flex;
+    padding: 120px 0;
+    @media (max-width: 840px) {
+      flex-direction: column;
+    }
+  }
+  &__image{
+    background-color: #1f2126;
+    filter: drop-shadow(0px 0px 27px #000);
+    flex: 1 0 445px;
+    max-width: 445px;
+    max-height: 400px;
+    & img{
+      max-width: 100%;
+      max-width: 445px;
+      max-height: 400px;
+    }
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 0 0 0 140px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text{
+    text-align: center;
+    line-height: 32px;
+  }
+  &__title{
+    margin-bottom: 56px;
+    &:after {
+      content: '';
+      display: block;
+      background: #fff;
+      width: 108px;
+      height: 2px;
+      margin: 13px auto 0 auto; 
+    }
+  }
+}
+
+/*signatures*/
+.signature {
+  background: url("../img/signaturess-bg.jpg")no-repeat;
+  background-size: cover;
+  &__row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 121px 0 121px 0;
+  }
+  &__title {
+    margin-bottom: 56px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 56px auto;
+  }
+  &__text {
+    max-width: 510px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 33px;
+  }
+}
+
+
+/*menu*/
+.menu {
+  color: #030405;
+  padding: 120px 0 55px 0;
+  &__title {
+    display: block;
+    margin: 0 auto 56px auto;
+    text-align: center;
+  }
+}
+
+
+.dish-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -96px;
+  &__dish {
+    display: flex;
+    flex: 0 1 50%;
+    flex-direction: column;
+    margin: 0 0 65px 0; 
+    padding: 0 96px;
+  }
+  &__info {
+    display: flex;
+  }
+  &__dish-title {
+    text-transform: uppercase;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 28px;
+  }
+  &__dish-price {
+    font-size: 16px;
+    color: #e91e5e;
+  }
+  &__dish-description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/*portfolio*/
+.potfolio{
+  background: #202126;
+  min-width: 0;
+}
+.swiper-slide{
+  width: 480px;
+  height: 365px;
+}
+.swiper-slide img{
+  width: 480px;
+  height: 365px;
+}
+/*footer*/
+.footer__top{
+  background: #1f2126;
+  padding: 85px 0 85px 0;
+  font-family: Roboto;
+  font-size: 14px;
+}
+.footer__top>.container{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.footer__info-title{
+  font-size: 26px;
+  margin-bottom: 57px;
+}
+.footer__info{
+  width: 250px;
+}
+.footer__info-text{
+  line-height: 24px;
+}
+.footer__nav-col{
+  display: flex;
+  flex-direction: column;
+}
+.footer__nav-title{
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+.footer__link{
+  margin-bottom: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+.footer__link:last-child{
+  margin-bottom: 0;
+}
+.footer__contact-title{
+  margin-bottom: 50px;
+}
+.footer__phone, .footer__adress{
+  margin-bottom: 20px;
+}
+.footer__phone{
+  background: url('../img/phone-logo.png') no-repeat;
+  background-size: contain;
+  padding-left: 33px;
+}
+.footer__adress{
+  background: url('../img/adress-logo.png') no-repeat;
+  background-size: contain;
+  padding-left: 33px;
+}
+.footer__email{
+  background: url('../img/email-logo.png') no-repeat;
+  background-size: contain;
+  padding-left: 33px;
+}
+.footer__bottom{
+  background: #0e1015;
+  padding: 63px 0 42px 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.footer__bot-row{
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.5;
+}
+.footer__bot-link{
+  text-decoration: none;
+  color: #fff;
+  margin-right: 30px;
+}
+.footer__bot-link:last-child{
+  margin-right: 0;
+}
+.fb-logo{
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+.footer__logo-links{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo-link{
+  display: flex;
+  align-items: center;
+}
+@import 'small';
